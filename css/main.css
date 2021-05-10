@@ -1,0 +1,154 @@
+/*Smooth scroll*/
+
+/*END - Smooth scroll*/
+/*Resize header*/
+.big {
+  height: 120px;
+}
+.small {
+  height: 70px;
+  background: pink;
+}
+header {
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background: #7fc21c;
+  box-shadow: 0 4px 10px -2px gray;
+}
+header .logo h1 {
+  font-family: "Kaushan Script", cursive;
+  float: left;
+  color: #fff;
+}
+header .navbar-brand img {
+  float: left;
+  margin-right: 15px;
+}
+header .logoImg {
+  height: 110px;
+}
+
+/*END - resize header*/
+/*Navigation*/
+.main-navigation ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-navigation ul li  {
+  list-style-type: none;
+}
+
+.main-navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto Condensed';
+  font-size:26px;
+}
+.main-navigation ul li:not(:first-child) {
+margin-left: 20px;
+}
+/*END - Navigation*/
+/*MAIN*/
+p, a span, div {
+  font-family: 'roboto condensed';
+}
+body > .container {
+  margin-top: 80px;
+}
+.block {
+  display:block;
+}
+a.btn.btn-primary.block
+{
+  width:101px;
+}
+.exc{
+  margin-bottom: 15px;
+}
+.exc p{
+  display:inline;
+}
+.exc p:after {
+  content:"...";
+}
+a {
+  color:#ff7900;
+}
+a:hover {
+  color:#7fc21c;
+}
+.btn-primary {
+  background:  #ff7900;
+}
+.btn-primary:hover {
+  background: #7fc21c;
+}
+.card {
+  margin-bottom: 20px;
+}
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ff7900;
+  border-color: #e46a00;
+}
+/*End -  Main*/
+
+/*Pagination*/
+.pager li .active_link {
+  background-color: #7fc21c;
+  color: #fff;
+}
+/*End - pagination*/
+/*Admin Tools*/
+.admin_tools {
+  position: fixed;
+  right: 0;
+  top: 40vh;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ff7900;
+  font-size: 18px;
+  line-height: 30px;
+  z-index: 999;
+  background-color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .admin_tools {
+    display: none;
+  }
+}
+.admin_tools p {
+  color: #c76107;
+  font-weight: bold;
+}
+.bigIcon {
+  font-size:32px;
+  color:#ff7900;
+}
+h3 {
+  color:#7fc21c;
+}
+/*End - Admin Tools*/
+
+/*Footer*/
+
+footer {
+  background: #ff7900;
+  border-top: 1px solid #fbb36b;
+  padding: 10px 0;
+}
+footer a,
+footer p,
+footer span {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: rgb(212, 211, 211);
+}
