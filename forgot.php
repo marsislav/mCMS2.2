@@ -1,18 +1,14 @@
 <?php  include "includes/db.php"; ?>
 <?php  include "includes/header.php"; ?>
-
-
-
 <?php
 
 require './vendor/autoload.php';
 
     if(!isset($_GET['forgot'])){
 
-        redirect('index');
+        redirect('index.php');
 
     }
-
 
     if(ifItIsMethod('post')){
 
@@ -24,17 +20,13 @@ require './vendor/autoload.php';
 
             $token = bin2hex(openssl_random_pseudo_bytes($length));
 
-
             if(email_exists($email)){
-
 
                 if($stmt = mysqli_prepare($connection, "UPDATE users SET token='{$token}' WHERE user_email= ?")){
 
                     mysqli_stmt_bind_param($stmt, "s", $email);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_close($stmt);
-
-
 
                     /**
                      *
@@ -63,9 +55,7 @@ require './vendor/autoload.php';
 
                     $mail->Body = '<p>Please click to reset your password
 
-                    <a href="http://localhost:8888/cms/reset.php?email='.$email.'&token='.$token.' ">http://localhost:888/cms/reset.php?email='.$email.'&token='.$token.'</a>
-
-
+                    <a href="https://web-company.org/reset.php?email='.$email.'&token='.$token.' ">https://web-company.org/reset.php?email='.$email.'&token='.$token.'</a>
 
                     </p>';
 
@@ -79,37 +69,18 @@ require './vendor/autoload.php';
                         echo "NOT SENT";
 
                     }
-
-
-
-
-
                 }
-
-
-
-
             }
-
-
-
-
+            else {
+                echo "<script>alert ('This Email adress does not exist in our DB!')</script>";
+            }
         }
-
-
      }
 
-
-
-
-
 ?>
-
-
-
-
-
-
+     <!-- Navigation -->
+    
+     <?php  include "includes/navigation.php"; ?>
 <!-- Page Content -->
 <div class="container">
 
@@ -121,9 +92,7 @@ require './vendor/autoload.php';
                     <div class="panel-body">
                         <div class="text-center">
 
-
                             <?php if(!isset( $emailSent)): ?>
-
 
                             <h3><i class="fa fa-lock fa-4x"></i></h3>
                             <h2 class="text-center">Forgot Password?</h2>

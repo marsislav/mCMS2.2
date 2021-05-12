@@ -44,6 +44,16 @@ $(function () {
     }
   });
 });
+
+/*Mobile menu*/
+  /* Mobile menu */
+  $(".mobile-menu-icon").click(function () {
+    $(".mobile-menu-icon").toggleClass("mobile-menu-icon-close");
+    $("header .menuDots ul li").fadeToggle(200, "linear");
+    $("header .menuDots ul li").css("display", "block");
+  });
+  /*Mobile menu - end */
+/*END - Mobile menu*/
 /*END - Resize header on scroll*/
 
 /*Simple image Pop-up */

@@ -1,35 +1,23 @@
 <?php
-
-
         if(ifItIsMethod('post')){
 
-
                 if(isset($_POST['login'])){
-
 
                     if(isset($_POST['username']) && isset($_POST['password'])){
 
                         login_user($_POST['username'], $_POST['password']);
 
-
                     }else {
-
 
                         redirect('index');
                     }
 
-
                 }
-
         }
-
 ?>
-
-
 
 <!-- Blog Sidebar Widgets Column -->
 <div class="col-md-4">
-
 
     <!-- Blog Search-->
     <div class="card card-body bg-light">
@@ -47,8 +35,6 @@
         <!--search form-->
         <!-- /.input-group -->
     </div>
-
-
 
     <!--Login -->
     <div class="card card-body bg-light">
@@ -76,9 +62,9 @@
                 </span>
             </div>
 
-            <div class="form-group">
+            <div class="form-group fPassword bold">
 
-                <a href="forgot.php?forgot=<?php echo uniqid(true); ?>">Forgot Password</a>
+                <a href="forgot.php?forgot=<?php echo uniqid(true); ?>">Forgot Password?</a>
 
 
             </div>
@@ -86,23 +72,12 @@
         </form>
         <!--search form-->
         <!-- /.input-group -->
-
-
-
         <?php endif; ?>
-
-
 
     </div>
 
-
-
-
-
     <!-- Blog Categories -->
     <div class="card card-body bg-light">
-
-
 
         <?php 
         $query = "SELECT * FROM categories";

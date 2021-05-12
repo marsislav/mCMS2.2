@@ -5,9 +5,7 @@
                 <img src="img/logo.png" alt="Web Company! - mCMS 2.2" class="logoImg" />
             </a>
         </div>
-        <nav class="
-        
-        ">
+        <nav class="main-navigation">
             <ul>
             <?php 
                 $query = "SELECT * FROM pages WHERE page_position != '0' ORDER BY page_position ASC";
@@ -19,6 +17,8 @@
                 }          
             ?>
             </ul>
+            <!--Mobile navigation-->
+            <i class="bi bi-list"></i>
         </nav>
     </div>
     <!-- /.container -->
