@@ -51,10 +51,6 @@ header .logoImg {
 .main-navigation ul li:not(:first-child) {
 margin-left: 20px;
 }
-.mobileMenu::before {
-  font-family: bootstrap-icons !important;
-  content: "\f2c8";
-}*/
 /*END - Navigation*/
 /*MAIN*/
 p, a span, div {

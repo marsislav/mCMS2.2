@@ -31,7 +31,7 @@ tinymce.init({
         success: function (response) {
           var fileName = response;
           if (fileName) {
-            ed.insertContent('<img sfdgrc="../../img/' + fileName + '" class="img-fluid"/>');
+            ed.insertContent('<img src="../../img/' + fileName + '" class="img-fluid"/>');
           }
         },
       });
