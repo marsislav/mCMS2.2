@@ -24,7 +24,6 @@ $(function () {
         transition: "0.5s",
       });
       navbar.css({
-        margin: "4% 0 0 0",
         transition: "0.5s",
       });
     } else {
@@ -38,7 +37,7 @@ $(function () {
         height: "110px",
       });
       navbar.css({
-        margin: "13% 0 0 0",
+
         transition: "0.5s",
       });
     }
@@ -47,44 +46,23 @@ $(function () {
 
 /*Mobile menu*/
   /* Mobile menu */
-  $(".mobile-menu-icon").click(function () {
-    $(".mobile-menu-icon").toggleClass("mobile-menu-icon-close");
-    $("header .menuDots ul li").fadeToggle(200, "linear");
-    $("header .menuDots ul li").css("display", "block");
+  $(".mobileMenu").click(function () {
+    $(".mobileMenu").toggleClass("bi bi-x-lg");
+    $(".mobileMenu").fadeToggle(200, "linear");
+    $(".mobileMenu").css("display", "block");
   });
   /*Mobile menu - end */
 /*END - Mobile menu*/
 /*END - Resize header on scroll*/
 
 /*Simple image Pop-up */
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
 
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector('.close-modal');
-const btnsOpenModal = document.querySelectorAll('.show-modal');
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
 
-const openModal = function () {
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-};
-
-const closeModal = function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
-
-for (let i = 0; i < handlerOpenModal.length; i++) {
-  handlerOpenModal[i].addEventListener('click', openModal);
-
-  handlerCloseModal.addEventListener('click', closeModal);
-  overlay.addEventListener('click', closeModal);
-}
-document.addEventListener('keydown', function (e) {
-
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    closeModal();
-  }
-});
 
 /*END - Simple image Pop-up */
 
