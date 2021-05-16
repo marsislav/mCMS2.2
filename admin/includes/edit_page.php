@@ -76,7 +76,7 @@
 
 
     <div class="form-group">
-        <input class="btn btn-primary" type="submit" name="update_post" value="Update Post">
+        <input class="btn btn-primary" type="submit" name="update_post" value="Update Page">
     </div>
 
 

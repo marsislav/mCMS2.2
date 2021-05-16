@@ -2,16 +2,9 @@
 
 <div id="wrapper">
 
-
-
-
-
     <!-- Navigation -->
 
     <?php include "includes/navigation.php" ?>
-
-
-
 
     <div id="page-wrapper">
 
@@ -21,9 +14,8 @@
             <div class="row">
                 <div class="col-lg-12">
 
-
                     <h1 class="page-header">
-                        Categories
+                        Categories,
                         <small> <?php 
 
 if(isset($_SESSION['username'])) {
@@ -33,7 +25,6 @@ echo $_SESSION['username'];
 
 ?></small>
                     </h1>
-
 
                     <div class="col-xs-6">
 
@@ -58,20 +49,14 @@ echo $_SESSION['username'];
         
         include "includes/update_categories.php";
        
-    
     }
-                
-                
+                     
     ?>
-
-
                     </div>
                     <!--Add Category Form-->
 
                     <div class="col-xs-6">
                         <table class="table table-bordered table-hover">
-
-
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -99,24 +84,11 @@ echo $_SESSION['username'];
     echo "</tr>";
 
     }
-
-
-
-
 ?>
-
-
-
 
                             </tbody>
                         </table>
-
-
-
-
                     </div>
-
-
                 </div>
             </div>
             <!-- /.row -->
@@ -126,17 +98,11 @@ echo $_SESSION['username'];
 
     </div>
 
-
-
     <?php 
 
 deleteCategories();
 
  ?>
-
-
-
-
 
     <!-- /#page-wrapper -->
 

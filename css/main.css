@@ -51,6 +51,20 @@ header .logoImg {
 .main-navigation ul li:not(:first-child) {
 margin-left: 20px;
 }
+
+
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: block!important;
+    flex-basis: auto;
+}
+}
 /*END - Navigation*/
 /*MAIN*/
 p, a span, div {

@@ -5,10 +5,10 @@
                 <img src="img/logo.png" alt="Web Company! - mCMS 2.2" class="logoImg" />
             </a>
         </div>
-        <nav class="main-navigation navbar navbar-expand-lg navbar-light">
+        <nav class="main-navigation navbar navbar-expand-lg">
      
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">

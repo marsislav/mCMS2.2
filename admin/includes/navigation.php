@@ -25,15 +25,9 @@ if(isset($_SESSION['username'])) {
     echo $_SESSION['username'];
 }
 ?>
-
-
-
                        <b class="caret"></b></a>
                    <ul class="dropdown-menu">
                        <li>
-
-
-
                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                        </li>
                        <li class="divider"></li>
@@ -43,16 +37,12 @@ if(isset($_SESSION['username'])) {
                    </ul>
                </li>
            </ul>
-
-
-
            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
            <div class="collapse navbar-collapse navbar-ex1-collapse">
                <ul class="nav navbar-nav side-nav">
                    <li>
                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                    </li>
-
                    <li>
                        <a href="javascript:;" data-toggle="collapse" data-target="#posts_dropdown"><i
                                class="fa fa-fw fa-arrows-v"></i>Posts <i class="fa fa-fw fa-caret-down"></i></a>
@@ -80,7 +70,6 @@ if(isset($_SESSION['username'])) {
                    <li>
                        <a href="./categories.php"><i class="fa fa-fw fa-wrench"></i> Categories</a>
                    </li>
-
                    <li class="">
                        <a href="comments.php"><i class="fa fa-fw fa-file"></i> Comments</a>
                    </li>
@@ -97,17 +86,10 @@ if(isset($_SESSION['username'])) {
                            </li>
                        </ul>
                    </li>
-
                    <li>
                        <a href="profile.php"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
                    </li>
-
-
-
                </ul>
            </div>
-
-
-
            <!-- /.navbar-collapse -->
        </nav>
