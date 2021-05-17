@@ -9,7 +9,7 @@ $dotenv = new \Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 $options = array(
     'cluster' => 'us2',
-    'encrypted' =>xvxzfgfgfhgfh true
+    'encrypted' => true
 );
 
 $pusher = new Pusher\Pusher(getenv('APP_KEY'), getenv('APP_SECRET'), getenv('APP_ID'), $options);
