@@ -8,6 +8,7 @@ $(function () {
   var header = $("header");
   var logo = $("header .logoImg");
   var navbar = $(".navbar-nav");
+  
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
@@ -25,6 +26,7 @@ $(function () {
       });
       navbar.css({
         transition: "0.5s",
+        "margin-top":"-30px",
       });
     } else {
       header.css({
@@ -37,8 +39,8 @@ $(function () {
         height: "110px",
       });
       navbar.css({
-
         transition: "0.5s",
+        "margin-top":"unset",
       });
     }
   });

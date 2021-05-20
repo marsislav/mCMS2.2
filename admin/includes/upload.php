@@ -2,7 +2,7 @@
 $fileName = $_FILES['file']['name'];
 $fileType = $_POST['filetype'];
 if($fileType == 'image'){
-  $validExtension = array('png','jpeg','webp','jpg');
+  $validExtension = array('png','jpeg','webp','jpg', 'gif');
 }
 $uploadDir = "../../img/".$fileName;
 $fileExtension = pathinfo($uploadDir, PATHINFO_EXTENSION);
