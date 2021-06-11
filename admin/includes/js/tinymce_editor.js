@@ -46,4 +46,5 @@ tinymce.init({
       },
     });
   },
+  valid_elements: '*[*]',
 });

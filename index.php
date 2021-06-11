@@ -47,8 +47,10 @@
 
          } else {
 
-         $post_query_count = "SELECT * FROM posts WHERE post_status = 'published' ORDER BY post_date DESC";
+            
 
+         $post_query_count = "SELECT * FROM `posts` ORDER BY `post_date` ASC";
+echo "HERE!";
          }   
 
         $find_count = mysqli_query($connection,$post_query_count);
@@ -63,7 +65,8 @@
 
         $count  = ceil($count /$per_page);
 
-        $query = "SELECT * FROM posts LIMIT $page_1, $per_page";
+        $query = "SELECT * FROM posts LIMIT $page_1, $per_page ";
+        echo "OR HERE";
         $select_all_posts_query = mysqli_query($connection,$query);
 
         while($row = mysqli_fetch_assoc($select_all_posts_query)) {
@@ -118,7 +121,8 @@
     </div>
     <!-- /.row -->
 
-    <ul class="pager">
+    
+    <ul class="pager pagination pagination-sm">
 
         <?php 
 
@@ -128,14 +132,15 @@
 
         if($i == $page) {
 
-             echo "<li '><a class='active_link' href='index.php?page={$i}'>{$i}</a></li>";
+             echo "<li class='page-item active' aria-current='page'><a class='page-link' href='blog.php?page={$i}'>{$i}</a></li>";
 
         }  else {
 
-            echo "<li '><a href='index.php?page={$i}'>{$i}</a></li>";
+            echo "<li class='page-item'><a href='blog.php?page={$i}' class='page-link'>{$i}</a></li>";
         }
         }
          ?>
+         
     </ul>
 </div>
 <?php include "includes/footer.php";?>

@@ -33,70 +33,106 @@ header .logoImg {
 
 /*END - resize header*/
 /*Navigation*/
+
 .main-navigation {
+  display: block;
+}
+.navbar-collapse {
+  display: block;
+  width: calc(100% + 24px);
+  margin-left: -12px;
+  transition: 0.5s;
+  background: #64882f;
+  margin-top: 50px;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .main-navigation {
     display: flex;
     justify-content: flex-end;
+  }
+  .navbar-collapse {
+    transition: 0.5s;
+    background: transparent;
+    margin-top: 0px;
+  }
 }
 
-.main-navigation ul li  {
+.main-navigation ul li {
   list-style-type: none;
 }
 
 .main-navigation ul li a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Roboto Condensed';
-  font-size:26px;
+  font-family: "Roboto Condensed";
+  font-size: 26px;
 }
 .main-navigation ul li:not(:first-child) {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
-
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav {
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: block !important;
+    flex-basis: auto;
+  }
 }
 
-.navbar-expand-lg .navbar-collapse {
-    display: block!important;
-    flex-basis: auto;
+.navbar-toggler:focus {
+  color: #fff;
+  box-shadow: 0 0 0 0.13rem;
 }
+.nav-link:focus,
+.nav-link:hover {
+  color: aliceblue;
+  text-decoration: underline;
 }
 /*END - Navigation*/
 /*MAIN*/
-p, a span, div {
-  font-family: 'roboto condensed';
+p,
+a span,
+div {
+  font-family: "roboto condensed";
 }
 body > .container {
   margin-top: 80px;
 }
 .block {
-  display:block;
+  display: block;
 }
-a.btn.btn-primary.block
-{
-  width:101px;
+a.btn.btn-primary.block {
+  width: 101px;
 }
-.exc{
+.exc {
   margin-bottom: 15px;
 }
-.exc p{
-  display:inline;
+.exc p {
+  display: inline;
 }
 .exc p:after {
-  content:"...";
+  content: "...";
 }
 a {
-  color:#ff7900;
+  color: #ff7900;
 }
+
 a:hover {
-  color:#7fc21c;
+  color: #7fc21c;
+}
+.text-danger {
+  color: #ff7900 !important;
+}
+.bold {
+  font-weight: bold;
 }
 .btn-primary {
-  background:  #ff7900;
+  background: #ff7900;
   border-color: #e46a00;
 }
 
@@ -107,10 +143,18 @@ a:hover {
 .card {
   margin-bottom: 20px;
 }
-.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #ff7900;
   border-color: #e46a00;
+}
+input,
+textarea {
+  width: 100%;
 }
 /*Modals*/
 /*
@@ -208,19 +252,19 @@ p {
   font-weight: bold;
 }
 .bigIcon {
-  font-size:32px;
-  color:#ff7900;
+  font-size: 32px;
+  color: #ff7900;
 }
 
 h3 {
-  color:#7fc21c;
+  color: #7fc21c;
 }
 /*End - Admin Tools*/
 
 /*Sidebar/Login*/
 .fPassword.bold {
   font-weight: bold;
-  margin-top:15px;
+  margin-top: 15px;
   display: block;
 }
 /*Sidebar/Login - End*/

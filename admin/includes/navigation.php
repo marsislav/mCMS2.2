@@ -89,6 +89,9 @@ if(isset($_SESSION['username'])) {
                    <li>
                        <a href="profile.php"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
                    </li>
+                   <li>
+                       <a href="settings.php"><i class="fa fa-fw fa-dashboard"></i> Settings</a>
+                   </li>
                </ul>
            </div>
            <!-- /.navbar-collapse -->

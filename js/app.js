@@ -8,6 +8,7 @@ $(function () {
   var header = $("header");
   var logo = $("header .logoImg");
   var navbar = $(".navbar-nav");
+  var navbarCollapse=$(".navbar-collapse");
   
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -28,6 +29,13 @@ $(function () {
         transition: "0.5s",
         "margin-top":"-30px",
       });
+      if ($(window).innerWidth() <= 992) {
+        navbarCollapse.css ({
+          "margin-top":"31px",
+          "transition":"0.5s",
+          "background":"#ff7900",
+        });
+      }
     } else {
       header.css({
         "background-color": "#80C31C",
@@ -42,6 +50,14 @@ $(function () {
         transition: "0.5s",
         "margin-top":"unset",
       });
+      if ($(window).innerWidth() <= 992) {
+        navbarCollapse.css ({
+          "margin-top":"50px",
+          "background": "#80C31C",
+        });
+      }
+
+      
     }
   });
 });
