@@ -5,20 +5,16 @@
     
     $username = $_SESSION['username'];
     
-    $query = "SELECT * FROM users WHERE username = '{$username}' ";
+    $query = "SELECT * FROM settings";
     
     $select_user_profile_query = mysqli_query($connection, $query);
     
     while($row = mysqli_fetch_array($select_user_profile_query)) {
     
-        $user_id = $row['user_id'];
-        $username = $row['username'];
-        $user_password= $row['user_password'];
-        $user_firstname = $row['user_firstname'];
-        $user_lastname = $row['user_lastname'];
-        $user_email = $row['user_email'];
-        $user_image = $row['user_image'];
-        $user_role= $row['user_role'];
+        $facebook_handler = $row['facebook_handler'];
+        $email_handler = $row['email_handler'];
+        $skype_handler= $row['skype_handler'];
+        $phone_handler = $row['skype_handler'];
     
     
     
@@ -33,7 +29,7 @@
 <?php 
 
 
-
+sfgdfgfdgfdg
 if(isset($_POST['edit_user'])) {
        
             
